@@ -1,0 +1,12 @@
+[package]
+name = "process-muxer"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+console = "0.15.8"
+libc = "0.2.155"
+process-muxer-core = { path = "../process-muxer-core", features = ["signals"] }
+regex = "1.10.4"
