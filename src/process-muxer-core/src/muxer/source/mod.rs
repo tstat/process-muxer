@@ -3,6 +3,7 @@ pub(crate) mod childout;
 pub(crate) mod signal;
 pub(crate) mod termination;
 
+#[cfg(feature = "signals")]
 pub enum EventStream<T> {
     Emit(T),
     Drained(SourceInstruction),

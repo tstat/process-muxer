@@ -19,8 +19,10 @@ use mio::{
 use slab::Slab;
 
 pub use self::source::childout::FdTag;
-use self::source::{childout::ChildOut, EventStream, SourceInstruction};
+use self::source::{childout::ChildOut, SourceInstruction};
 
+#[cfg(feature = "signals")]
+use self::source::EventStream;
 #[cfg(feature = "signals")]
 use source::signal::{Signal, SignalSource};
 
