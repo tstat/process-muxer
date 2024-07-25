@@ -13,5 +13,5 @@ repository = "https://github.com/tstat/process-muxer"
 [dependencies]
 console = "0.15.8"
 libc = "0.2.155"
-process-muxer-core = { path = "../process-muxer-core", features = ["signals"] }
+process-muxer-core = { path = "../process-muxer-core", version = "0.1.0", features = ["signals"] }
 regex = "1.10.4"
