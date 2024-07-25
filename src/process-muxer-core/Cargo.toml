@@ -2,6 +2,11 @@
 name = "process-muxer-core"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+description = """
+  Library for single-threaded process multiplexing
+"""
+repository = "https://github.com/tstat/process-muxer"
 
 [dependencies]
 libc = "0.2.155"
